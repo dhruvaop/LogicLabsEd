@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useSelector } from 'react-redux'
 import CartCourses from './CartCourses'
 import CartAmount from './CartAmount'

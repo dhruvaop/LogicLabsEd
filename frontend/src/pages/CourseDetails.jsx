@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { useNavigate, useParams } from 'react-router-dom'
 import Spinner from '../components/common/Spinner';
@@ -22,7 +22,6 @@ import secToDurationFormatter from '../utils/secToDurationFormatter';
 import { BsDot } from 'react-icons/bs'
 import CourseSectionAccordion from '../components/core/Course/CourseSectionAccordion';
 import { buyCourses } from '../services/operations/paymentServices';
-import { getAllReviews } from '../services/operations/otherServices';
 import ReviewsSlider from '../components/common/ReviewsSlider';
 
 

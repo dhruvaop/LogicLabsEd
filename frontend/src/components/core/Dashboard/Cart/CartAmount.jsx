@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 import IconBtn from '../../../common/IconBtn'
-import { toast } from 'react-hot-toast'
+
 import { buyCourses } from '../../../../services/operations/paymentServices'
 
 const CartAmount = () => {

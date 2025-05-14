@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import HighlightedText from '../components/core/HomePage/HighlightedText'
 import Footer from '../components/common/Footer'
 import FoundingStory from '../assets/Images/FoundingStory.png'

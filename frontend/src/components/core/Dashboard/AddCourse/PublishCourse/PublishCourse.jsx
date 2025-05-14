@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 import IconBtn from '../../../../common/IconBtn';
 import { useForm } from 'react-hook-form'
-import toast from 'react-hot-toast';
+
 import { MdNavigateBefore } from "react-icons/md"
 import { resetCourseState, setStep } from '../../../../../redux/slices/addCourseSlice';
 import { COURSE_STATUS } from '../../../../../utils/constants';

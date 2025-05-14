@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ContactDetails from '../components/core/ContactPage/ContactDetails'
 import ContactUsForm from '../components/core/ContactPage/ContactUsForm'
 import Footer from '../components/common/Footer'

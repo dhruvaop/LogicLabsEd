@@ -1,8 +1,8 @@
 import './App.css';
-import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import { useEffect } from 'react';
 import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+
 import Home from './pages/Home'
 import LogIn from './pages/LogIn'
 import SignUp from './pages/SignUp'
@@ -37,7 +37,8 @@ import ViewCourse from './pages/ViewCourse';
 
 function App() {
 
-  const { token } = useSelector(state => state.auth);
+  // const { token } = useSelector(state => state.auth);
+  const token = useSelector((state) => state.auth.token);
 
   // eslint-disable-next-line
   const { user } = useSelector(state => state.profile);
