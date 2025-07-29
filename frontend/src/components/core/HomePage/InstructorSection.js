@@ -44,7 +44,7 @@ import Instructor from '../../../assets/Images/Instructor.png';
 const InstructorSection = () => {
   return (
     <section className="flex flex-col items-center gap-16 lg:flex-row lg:gap-20">
-      {/* ─── Image with faux frame ──────────────────────────────── */}
+      {/* ─── Image with faux frame ───────────────────────────── */}
       <div className="relative lg:w-1/2 max-w-xl">
         {/* white frame behind the photo */}
         <span className="absolute -top-6 -left-6 -z-10 block h-full w-full rounded-lg bg-white" />
@@ -55,21 +55,26 @@ const InstructorSection = () => {
         />
       </div>
 
-      {/* ─── Content ─────────────────────────────────────────────── */}
+      {/* ─── Copy + CTA ─────────────────────────────────────── */}
       <div className="flex flex-col gap-8 lg:w-1/2">
         <h2 className="text-4xl font-semibold leading-snug text-white">
           Become an <HighlightedText text="instructor" />
         </h2>
 
         <p className="w-[90%] text-base font-medium text-richblack-300">
-          Instructors from around the world teach millions of students on Logic Labs Ed.
+          Instructors from around the world teach millions of students on Logic Labs Ed.
           We provide the tools and skills to teach what you love.
         </p>
 
-        <CTAButton active linkto="/signup" className="w-fit">
-          <div className="flex items-center gap-2">
-            Start Teaching Today <FaArrowRight />
-          </div>
+        {/* ‑‑‑ smaller CTA just for this button ‑‑‑ */}
+        <CTAButton
+          active
+          linkto="/signup"
+          className="!px-4 !py-2 !text-sm w-fit"
+        >
+          <span className="flex items-center gap-2">
+            Start Teaching Today <FaArrowRight className="text-xs" />
+          </span>
         </CTAButton>
       </div>
     </section>
@@ -77,4 +82,3 @@ const InstructorSection = () => {
 };
 
 export default InstructorSection;
-
