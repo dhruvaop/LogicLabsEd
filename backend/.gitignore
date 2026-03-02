@@ -1,4 +1,6 @@
 node_modules
 config/config.env
+config/process.env
+*.env
 backend.zip
 backend.rar

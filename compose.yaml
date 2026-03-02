@@ -29,8 +29,8 @@ services:
     ports: 
       - 8000:8000
 
-    environment: 
-      DB_URL: mongodb+srv://dhruvatechxr:evWUlF1kAym2mybk@cluster0.rvnfcqc.mongodb.net
+    environment:
+      - MONGO_URI=${MONGO_URI}
     
     develop:
       watch:
