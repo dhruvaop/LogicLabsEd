@@ -1,6 +1,7 @@
 node_modules
 config/config.env
-config/process.env
 *.env
+# process.env is intentionally tracked as a configuration template (contains no real secrets)
+!config/process.env
 backend.zip
 backend.rar
