@@ -32,26 +32,7 @@ app.use(
   })
 );
 app.use(cookieParser());
-const allowedOrigins = process.env.STUDY_NOTION_FRONTEND_SITE
-  ? process.env.STUDY_NOTION_FRONTEND_SITE.split(',').map((o) => o.trim())
-  : [];
-
-app.use(
-  cors({
-    origin: (origin, callback) => {
-      // In production every request must carry an explicit origin.
-      // In development, allow same-server / tool requests that send no origin header.
-      if (!origin && process.env.NODE_ENV !== 'production') {
-        return callback(null, true);
-      }
-      if (origin && allowedOrigins.includes(origin)) {
-        return callback(null, true);
-      }
-      callback(new Error('Not allowed by CORS'));
-    },
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Mount routes

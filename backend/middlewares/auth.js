@@ -45,7 +45,7 @@ exports.adminAuthorization = () => {
 
 exports.isSiteOwner = (req, res, next) => {
   if (req.user.email !== process.env.SITE_OWNER_EMAIL) {
-    return next(new ErrorResponse('User not authorized to access this route', 401));
+    next(new ErrorResponse('User not authorized to access this route', 401));
   }
   next();
 };
